@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>TEA : ADMIN_LOGIN</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{/css/ALogin.css}" />
+</head>
+
+<body>
+	<nav th:replace="~{Navigation::navbar()}"></nav>
+	<section class="admin">
+		<div class="content">
+			<strong style="font-size: 16px;margin-bottom: 0px;">BUSINESS</strong>
+			<h2>For <span style="color:green;">Admins</span></h2>
+
+			<form action="" th:action="@{/adminLogin}" method="post">
+				<b>Email :</b>
+				<input type="email" name="adminEmail" placeholder="Enter email..." class="email"> <br />
+				<b> Password:</b>
+				<input type="password" name="adminPassword" placeholder="Enter password..." class="password"><br />
+				<small style="color: red;" th:text="${error}"></small><br />
+				<button type="submit" class="loginButton">Log in</button>
+			</form>
+		</div>
+	</section>
+</body>
+
+</html>

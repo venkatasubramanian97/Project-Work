@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+	background-color: #333;
+	color: white;
+	position: sticky;
+	z-index: 1;
+	top: 0px;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+}
+
+a:hover {
+	color: #66ccff;
+	transition: 0.3s;
+}
+
+.Owner_Logo {
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+}
+
+li a,
+.dropbtn {
+	margin: 0 10px;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 160px;
+}
+
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	color: #66ccff;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}

@@ -1,0 +1,120 @@
+body {
+	background-color: rgb(48, 47, 47);
+	background-size: inherit;
+	background-repeat: round;
+}
+
+* {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+a {
+	width: max-content;
+	color: white;
+	text-decoration: none;
+	border: 1px black solid;
+	padding: 10px;
+	background-color: darkslategray;
+	position: fixed;
+}
+
+.searchInput {
+	margin-top: 10px;
+	background-color: black;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 40px;
+}
+
+.searchInput input {
+	padding: 12px;
+	width: 350px;
+	border: 1px solid black;
+}
+
+.searchInput button {
+	width: 150px;
+	border: 1px green solid;
+	padding: 12px;
+	background-color: black;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+.searchInput button:hover {
+	background-color: green;
+	transition: 1.3s;
+}
+
+.details input {
+	display: block;
+	padding: 5px;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7px;
+}
+
+.details button {
+	width: 120px;
+	border: 1px green solid;
+	padding: 10px;
+	background-color: black;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+.details button:hover {
+	background-color: green;
+	transition: 1.3s;
+}
+
+.details {
+	margin-top: 10px;
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+	color: antiquewhite;
+}
+
+.welcome marquee,
+.welcome span {
+	width: 50%;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: lavender;
+}
+
+h2 {
+	color: antiquewhite;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+table {
+	width: 90%;
+	padding: 5px;
+	border: none;
+	box-shadow: 5px 5px 10px green;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td {
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: antiquewhite;
+}
+
+th {
+	font-family: sans-serif;
+	padding: 12px;
+	background-color: green;
+	color: black;
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>ADD : PRODUCT</title>
+	<link rel="stylesheet" th:href="@{/css/Add_Product.css}" />
+</head>
+
+<body>
+	<a href="/admin/services">Back to Services</a>
+	<div class="addProducts">
+		<h3 style="font-weight: bolder; color: red;">ADD NEW PRODUCT :</h3>
+		<form action="/addingProduct" method="post" enctype="multipart/form-data">
+			Product_Name:
+			<input type="text" name="productName" placeholder="Enter Product Name....." required />
+			Product_Price:
+			<input type="number" name="productPrice" step="0.01" placeholder="Enter Product Price...." required />
+			Product_Desc:
+			<textarea name="productDescription" cols="15" rows="1" placeholder="Enter Product Description.."
+				required></textarea>
+			Product_Image:
+			<input type="file" name="imageFile" required />
+			<button type="submit">Add Product</button>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+body {
+	background-color: white;
+}
+
+h1 {
+	font-family: cursive;
+	margin-top: 0px;
+}
+
+.location {
+	border: 2px solid black;
+	position: absolute;
+	left: 60px;
+}

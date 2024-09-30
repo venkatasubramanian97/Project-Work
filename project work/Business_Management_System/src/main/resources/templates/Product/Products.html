@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>TEA : PRODUCTS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{css/Products.css}" />
+</head>
+
+<body>
+	<nav th:replace="~{Navigation::navbar()}"></nav>
+	<div class="rows">
+		<section class="row1" th:each="s : ${products}">
+			<div class="p1">
+				<img th:src="@{${s.productImage}}" alt="Product Image" />
+				<h4>Product Name : <span class="uppercase" th:text="${s.productName}"></span></h4>
+				<h4>Product Price : <span th:text="'₹ '+${s.productPrice}"></span></h4>
+				<a href="#" class="buy-link" th:attr="data-product-name=${s.productName}">Buy Now</a><br />
+			</div>
+		</section>
+	</div>
+	<script>
+		document.querySelectorAll(".buy-link").forEach(link => {
+			link.addEventListener("click", function (event) {
+				event.preventDefault();
+				const productName = this.getAttribute("data-product-name");
+				alert("Please Login as a User to buy Products");
+				window.location.href = `/PULogin?productName=${encodeURIComponent(productName)}`;
+			});
+		});
+	</script>
+</body>
+
+</html>

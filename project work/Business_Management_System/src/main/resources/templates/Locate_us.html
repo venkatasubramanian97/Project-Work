@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>TEA : LOCATION</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{/css/Locate_us.css}" />
+</head>
+
+<body>
+	<nav th:replace="~{Navigation::navbar()}"></nav>
+	<center>
+		<h1>Our Location</h1>
+		<small style="color: red;font-weight: bold;">Internet required..</small>
+	</center>
+	<div class="location">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7890.588365923724!2d77.4043489621718!3d8.567685765763205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b044643873b9449%3A0x6dba31c01fc97db6!2sManjolai%2C%20Tamil%20Nadu%20627420!5e0!3m2!1sen!2sin!4v1724076541048!5m2!1sen!2sin"
+			width="1100" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</body>
+
+</html>

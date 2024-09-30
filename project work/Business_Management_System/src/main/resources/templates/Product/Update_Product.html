@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>UPDATE : PRODUCT</title>
+	<link rel="stylesheet" href="" th:href="@{/css/Update_Product.css}" />
+</head>
+
+<body>
+	<a href="/admin/services">Back To Services</a>
+	<div class="updateProduct">
+		<h3 style="font-weight: bolder;color: red;">UPDATE EXISTING PRODUCT :</h3>
+		<form action="#" th:action="@{/updatingProduct/{productId}(productId=${product.productId})}" method="post"
+			enctype="multipart/form-data">
+			<input type="hidden" th:value="${product.productId}" />
+			Product_Name :
+			<input type="text" name="productName" th:value="${product.productName}" />
+			Product_Price :
+			<input type="text" name="productPrice" th:value="${product.productPrice}" />
+			Product_Desc :
+			<textarea name="productDescription" id="" cols="10" rows="1"
+				th:text="${product.productDescription}"></textarea>
+			<input type="file" id="imageFile" name="imageFile" />
+			<button type="submit">Update_Product</button>
+		</form>
+	</div>
+</body>
+
+</html>

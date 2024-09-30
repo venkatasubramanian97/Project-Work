@@ -1,0 +1,59 @@
+.user {
+	font-size: 20px;
+	font-family: sans-serif;
+	letter-spacing: 0.1px;
+	color: lightslategray;
+	position: relative;
+}
+
+.content {
+	position: absolute;
+	left: 550px;
+	top: 100px;
+}
+
+input {
+	display: block;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	padding: 10px;
+	color: seagreen;
+	font-size: 16px;
+	cursor: pointer;
+	width: 200px;
+}
+
+input:hover {
+	transition: 1s;
+	width: 300px;
+}
+
+.loginButton {
+	border: 1px solid green;
+	cursor: pointer;
+	color: green;
+	font-weight: bold;
+	padding: 5px;
+	width: 80px;
+}
+
+.loginButton:hover {
+	width: 110px;
+	border-radius: 5px;
+	color: antiquewhite;
+	background-color: green;
+	transition: 1s;
+}
+
+.Update {
+	width: 110px;
+}
+
+.Update:hover {
+	width: 140px;
+}
+
+p {
+	margin-top: 25px;
+}
